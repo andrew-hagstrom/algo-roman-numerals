@@ -1,4 +1,4 @@
-function toRomanLazy(num) { 1955
+function toRomanLazy(num) {
   let output = "";
   const romanNumeralToArabic = {
    I: 1, 
@@ -14,7 +14,7 @@ function toRomanLazy(num) { 1955
 
   for (ltr of romanNumeralPriorityOrder) { 
     if (num / romanNumeralToArabic[ltr] >=1) {
-      howMany = Math.floor(num / romanNumeralToArabic[ltr]); 1
+      howMany = Math.floor(num / romanNumeralToArabic[ltr]); 
       for (i = howMany; i > 0; i--) {
         output += ltr; 
         num -= romanNumeralToArabic[ltr] }
